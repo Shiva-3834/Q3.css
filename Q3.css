@@ -1,0 +1,32 @@
+/*Write css in the three blocks provided below.
+You shoud not add any other classes here.*/
+
+.box1 {
+  display: flex; /*It makes box1 flexible by setting the display property to flex  */
+  
+  flex-direction: column; /*This property defines in which direction this box1 wants to stack the flex items. The column value stacks the flex items vertically (from top to bottom)*/
+ 
+  
+  flex-grow: 2;
+ 
+}
+
+.row , .row>span{
+  display: flex;
+  flex-direction: row; 
+  flex-grow: 4;
+  
+  position: relative;
+
+  top:22px;
+align-content: center;
+justify-content: space-evenly;/*this makes elements to get spaced equaly*/
+
+  
+
+}
+
+
+.box2 {
+   position: relative;/*The element is positioned relative to its normal position */
+}
