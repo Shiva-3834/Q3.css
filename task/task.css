@@ -1,0 +1,152 @@
+ body {
+
+      display: grid;/*The  Grid propery offers a grid-based layout system, with rows and columns */
+     grid-template-areas: /* specifies a grid item's size and location within a grid by contributing a line,*/
+         "header header header "   
+         "menu menu menu  "
+
+         "footer footer footer";
+     grid-template-rows: 80px 2fr 60px; /* The grid-template-rows or  grid-template-columns property defines the height and width of each row and column*/
+     grid-template-columns: 30% 2fr 15%;
+     grid-gap: 10px;
+     height: 170vh;
+     margin: 0;
+     background: linear-gradient(120deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); /*  linear gradient display  smooth  transitions between two or more specified colors.*/
+     background-repeat: no-repeat; 
+
+     animation: gradient 15s ease infinite;
+
+ }
+
+
+ menu,
+ div {
+     padding: 40px;
+     background-image: linear-gradient(120deg, rgb(211, 62, 62), rgb(38, 202, 38));
+
+ }
+
+ #pageHeader {
+     display: grid;
+     grid-area: header;
+     justify-content: center;  /*This property used to allign the Items. at this moment It allign the content at the center of that particular grid */
+     background-image: linear-gradient(120deg, rgb(240, 220, 220), rgb(42, 43, 42)); 
+
+
+
+ }
+
+ #pageHeader ul li a {
+
+     text-decoration: none; /*text-decoration property is used to remove or add marks like underline, dashed line etc.. but at this momengt it removes the dot mark   */
+     position: relative;
+     left: -49px;
+     top: -25px;
+     padding: 33px;
+     font-family: 'Bree Serif', serif;
+     font-size: large;
+     font-weight: bold;
+
+
+ }
+
+
+ #pageHeader ul li a:hover {
+
+     color:black;/* hover is used to change the color of a element when the cursor hovered on that particular element. At this moment it changes the color to black */
+
+ }
+
+
+ #pageHeader ul li {
+
+     list-style-type: none; /*This propety used to remove or add listing style like point, disc etc... */
+
+
+ }
+
+ #logo {
+
+     position: relative;
+     right: 363px;
+     top: 10px;
+     font-family: 'Trade Winds', cursive;
+     color:black;
+
+
+ }
+#logo:hover{
+
+color:darkmagenta;
+
+}
+
+
+
+ #pageFooter {
+     grid-area: footer;
+ }
+
+ #mainArticle {
+     grid-area: menu;/* setting the specific area alloted to menu*/
+     display: grid;
+     grid-template-columns: auto auto auto;
+
+
+
+     padding: 0px;
+
+ }
+
+ .grid-item {
+
+     background-color: rgba(255, 255, 255, 0.8);
+
+
+     border: 1px solid rgba(0, 0, 0, 0.8);
+     padding: 5px;
+     font-family: 'Milonga', cursive;
+     font-size: 20px;
+     text-align: center;
+     height: 350px;
+     
+
+
+ }
+
+ img {
+     width: 200.89px;/*setting the image width and height*/
+     height: 300px;
+
+
+
+ }
+
+ #pageFooter {
+     position: relative;
+     position: relative;/*The element is positioned relative to its normal position */
+
+     background-color: #e73c7e;
+     background-repeat: no-repeat;
+     text-align: center;
+ }
+
+ #demo6 {
+     font-size: 15px;
+
+
+ }
+
+ #demo7 {
+     font-size: large;
+
+
+ }
+
+ #demo8 {
+     font-size: large;
+
+
+ }
+
+ 
